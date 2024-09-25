@@ -85,12 +85,15 @@ Follow these steps to set up the project on your local machine:
 
    You can now access the application at http://127.0.0.1:8000/.
 
-10. **Running Tests:**
+
+10. **API Documentation:**
+    
+   ```bash
+   http://127.0.0.1:8000/swagger/
+
+
+11. **Running Tests:**
     
    ```bash
    pytest
 
-11. **API Documentation:**
-    
-   ```bash
-   http://127.0.0.1:8000/swagger/
