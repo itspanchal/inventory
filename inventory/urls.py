@@ -1,8 +1,7 @@
-from django.urls import path, include
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.urls import path
+from .views import ItemCreateView, ItemDetailView
 
 urlpatterns = [
-    path('api/', include('inventory.urls')),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('items/', ItemCreateView.as_view(), name='item_create'),
+    path('items/<int:pk>/', ItemDetailView.as_view(), name='item_detail'),
 ]
