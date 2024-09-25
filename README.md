@@ -34,7 +34,7 @@ Follow these steps to set up the project on your local machine:
 2. **Create a virtual environment:**
 
    ```bash
-   python -m venv venv
+   python3 -m venv venv
 
 3. **Activate the virtual environment:**
     
@@ -46,16 +46,27 @@ Follow these steps to set up the project on your local machine:
    ```bash
    pip install -r requirements.txt
 
-5. **Set up the database:**
-    Update your database settings in settings.py with your PostgreSQL credentials.
-    
-   ```bash
-   python manage.py migrate
+5. **Set up the database:** 
+      ```bash
+      Create Database in postgresql 
+   
+      psql -U postgres
+       - CREATE USER newuser WITH PASSWORD 'password';
+       - CREATE DATABASE newdatabase;
+       - GRANT ALL PRIVILEGES ON DATABASE newdatabase TO newuser;
+       \q # to exit from postgresql
+
+      replace .env.example with .env
+      Update below database settings in .env with your PostgreSQL credentials.
+       - DB_NAME
+       - DB_USER
+       - DB_PASSWORD
+      python3 manage.py migrate
 
 6. **Create a superuser:**
     
    ```bash
-   python manage.py createsuperuser
+   python3 manage.py createsuperuser
 
 7. **Run Redis server (if using Redis for caching):**
     
@@ -65,7 +76,7 @@ Follow these steps to set up the project on your local machine:
 8. **Running the Application:**
     
    ```bash
-   python manage.py runserver
+   python3 manage.py runserver
 
    You can now access the application at http://127.0.0.1:8000/.
 
