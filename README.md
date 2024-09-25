@@ -61,31 +61,36 @@ Follow these steps to set up the project on your local machine:
        - DB_NAME
        - DB_USER
        - DB_PASSWORD
-      python3 manage.py migrate
+      
 
-6. **Create a superuser:**
+6. **Database migrate:**
+    
+   ```bash
+   python3 manage.py migrate
+
+7. **Create a superuser:**
     
    ```bash
    python3 manage.py createsuperuser
 
-7. **Run Redis server (if using Redis for caching):**
+8. **Run Redis server (if using Redis for caching):**
     
    ```bash
    redis-server
 
-8. **Running the Application:**
+9. **Running the Application:**
     
    ```bash
    python3 manage.py runserver
 
    You can now access the application at http://127.0.0.1:8000/.
 
-9. **Running Tests:**
+10. **Running Tests:**
     
    ```bash
    pytest
 
-9. **API Documentation:**
+11. **API Documentation:**
     
    ```bash
    http://127.0.0.1:8000/swagger/
