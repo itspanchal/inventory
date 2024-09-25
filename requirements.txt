@@ -1,23 +1,35 @@
 asgiref==3.8.1
+certifi==2024.7.4
+cffi==1.17.1
+cryptography==42.0.8
 Django==5.1.1
+django-redis==5.4.0
 djangorestframework==3.15.2
 djangorestframework-simplejwt==5.3.1
+drf-yasg==1.21.7
+inflection==0.5.1
+packaging==24.1
 psycopg2-binary==2.9.9
-PyJWT==2.9.0
-redis==5.0.8
-sqlparse==0.5.1
-certifi==2024.7.4
-cffi @ file:///private/tmp/cffi-20231211-40239-j25k6o/cffi-1.16.0
-cryptography==42.0.8
 pycparser==2.22
+PyJWT==2.9.0
 PyQt3D==5.15.6
+PyQt3D-Qt5==5.15.15
 PyQt5==5.15.10
+PyQt5-Qt5==5.15.15
 PyQt5-sip==12.13.0
 PyQtChart==5.15.6
+PyQtChart-Qt5==5.15.15
 PyQtDataVisualization==5.15.5
+PyQtDataVisualization-Qt5==5.15.15
 PyQtNetworkAuth==5.15.5
+PyQtNetworkAuth-Qt5==5.15.15
 PyQtPurchasing==5.15.5
+PyQtPurchasing-Qt5==5.15.15
 PyQtWebEngine==5.15.6
-setuptools @ file:///private/tmp/python-setuptools-20240223-4585-1z5qt4/setuptools-69.1.1
-wheel @ file:///opt/homebrew/Cellar/python%403.12/3.12.4/libexec/wheel-0.43.0-py3-none-any.whl#sha256=ff23205a590f2b902a2a21151019e96b93ab4a1409d7c9748b6bd210f4c0f44d
-
+PyQtWebEngine-Qt5==5.15.15
+python-decouple==3.8
+pytz==2024.2
+PyYAML==6.0.2
+redis==5.0.8
+sqlparse==0.5.1
+uritemplate==4.1.1
